@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css2?family=Amatic+SC&family=Righteous&display=swap);
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(176,224,230,0.6);
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+}
+
+.navig a{
+  background-color: mediumturquoise;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Lato', serif;
+}
+
+.navig a:hover {
+  background-color: CadetBlue;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 0.8em;
+    margin: auto;
+  }
+}
+
+article {
+    margin: 0 auto;
+    height: 500px;
+    width: auto;
+}
+  
+  header {
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+.pr{
+    height: 500px;
+    width: 100%;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+  
+#overlay h1 {
+  top: 320px;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-size: 3.7em;
+  font-family: 'Amatic SC', cursive;
+  text-transform: uppercase;
+}
+
+.omino{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin:-35px auto;
+  right: 30px;
+  left: 30px;
+  height:80px;
+  width:80px;
+}
+
+.persona{
+  font-size: 14px;
+  display: flex;
+  font-family:'Lato', arial;
+  margin:80px auto 10px;
+  position: absolute;
+  width:100px;
+  text-align: center;
+}
+
+#flex{
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  height: auto;
+  width: 66.67%;
+  padding: 0 40px 0 40px;
+  margin: 60px auto auto auto;
+  flex-direction:column;
+  font-family: 'Lato', arial;
+}
+
+#pic{
+  margin: 20px 0px 60px 0px;
+}
+
+#flex p{
+  margin: 20px 0 20px 0;
+}
+
+#split{
+  display:flex;
+  margin-left: -30px;
+  width: 100% -40px;
+  margin-top: 60px;
+  justify-content: start;
+    font-family:"Lato", arial;
+}
+
+.cont{
+  float: left;
+  font-size: 1.5em;
+  font-family:"Amatic SC", arial;
+}
+
+.sk{
+  float: left;
+  font-size: 1.5em;
+  margin-left: 18px;
+  padding-bottom: 0px;
+}
+
+.p-line{
+  font-family: 'Raleway', calibri;
+  color: LightSeaGreen;
+  font-size: .7em;
+  line-height: 0;
+}
+
+.p-fact{
+  text-align: justify;
+  font-size: 1.2em;
+  color: black;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 1em;
+  font-family: 'Lato', arial;
+}
+
+.com{
+  margin: 20px auto 20px auto;
+}
+
+#piedi{
+  display: flex;
+  background-color: rgba(12, 99, 127, 0.9);
+  position: relative;
+  justify-content: center;
+  z-index:99;
+  align-items: center;
+  font-family: 'Lato', arial;
+  margin-top:60px;
+}
+
+.foot{
+  text-align: center;
+  color:#ffffff;
+}
+
+
+
+/*INTEGRAZIONE API*/
+
+form{
+  width: 66%;
+  margin: 40px auto auto auto;
+}
+
+
+#global-view{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#global-view .container{
+  margin: 10px;
+  padding: 10px;
+  max-width: 230px;
+  max-height: 230px;
+  display:flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hidden{
+  display:none;
+}
+
+.modale{
+  display: flex; /*flex deve esserlo solo il DIV non anche l'immagine al suo interno*/
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width:100%;
+  position: fixed; /*posiziono la modale al centro, qualsiasi immagine prendo*/
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.modale img{
+  height: 50%;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+
+/*INTEGRAZIONE API*/
+
+form{
+  width: 66%;
+  margin: 40px auto 10px auto;
+  text-align: center;
+  font-family: 'Lato', arial;
+}
+
+
+#global-view{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#global-view .container{
+  margin: 10px;
+  padding: 10px;
+  max-width: 230px;
+  max-height: 230px;
+  display:flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hidden{
+  display:none;
+}
+
+.modale{
+  display: flex; /*flex deve esserlo solo il DIV non anche l'immagine al suo interno*/
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width:100%;
+  position: fixed; /*posiziono la modale al centro, qualsiasi immagine prendo*/
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.modale img{
+  height: 50%;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+/*OAUTH 2.0*/
+
+#city-api, #kat-api, #bali-api,
+#berli-api, #chic-api{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 10px;
+}
+
+#city-api .album, #kat-api .album,
+#bali-api .album, #berli-api .album,
+#chic-api .album{
+  margin: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  max-width: 150px;
+  display:flex;
+  flex-direction: column;
+  height: auto;
+}
+
+#city-api img, #kat-api img{
+  max-width: 100%;
+}
+
+#cityb, #katb,  #balib,
+#berlib,  #chicb{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#but1, #but2, #but3, #but4, #but5{
+  background-color: mediumturquoise;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Lato', serif;
+}
+
+#but1:hover, #but2:hover, #but3:hover,
+#but4:hover, #but5:hover {
+  background-color: #85dfdd;
+  color: black;
+}
